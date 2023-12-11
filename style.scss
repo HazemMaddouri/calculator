@@ -1,45 +1,77 @@
-
 html {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
-    body {
-        background-color: rgb(253, 198, 206);
-    }
+body {
+    background: linear-gradient(to right bottom, red, blue);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
 
-    main {
-        box-sizing: border-box;
-        border: solid 1px;
-        width: 250px;
-    }
+.here {
+    margin-top: 25%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
-    input {
+main {
+    width: 1fr;
+}
+
+input {
+    border: none;
+    background: none;
+}
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin: 0;
+    padding: .2rem;
+    border: none;
+    border-radius: 5px;
+    td {
+        height: 100%;
+        width: 100%;
         border: none;
-        background: none;
-    }
-
-    table {
-        border: none;
-        background: none;
-
-        td {
-            background: none;
-            border: none;
-            margin: none;
-            padding: none;
-
-            button {
-                width: 100%;
-                border-radius: 5px;
-                background-color: #FFFDFA;
-                border:groove 1px #444444;
-                color: #444444;
-                transition: 0.3s ease-in-out;
-                
-                &:hover {
-                    background-color: lightblue;
-                    color: #444444;
-                }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            height: 4rem;
+            width: 100%;
+            margin: 0;
+            padding: 2rem;
+            font-size: 2rem;
+            border-radius: 5px;
+            border: #3a3a3a solid 1px;
+            background: #F5F5F5;
+            color: #3a3a3a;
+            transition: 0.2s ease-in-out;
+            box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25), -2px -2px 4px 0 rgba(255, 255, 255, 0.3);
+            &:hover {
+                background: #3a3a3a;
+                border-color: #F5F5F5;
+                color: #F5F5F5;
+                box-shadow: -2px -2px 6px 0 rgba(0, 0, 0, 0.25), 4px 4px 6px 0 rgba(255, 255, 255, 0.3);
             }
         }
     }
+}
+#output {
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #F5F5F5;
+    pointer-events: none;
+    height: 4rem;
+    font-size: 2rem;
+    margin: 0;
+    border: #181818 solid 1px;
+    border-radius: 5px;
+}

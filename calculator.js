@@ -1,10 +1,11 @@
-         const body = document.getElementById('here')
-         const calculatrice = ` <main>
+         const body = document.querySelector('.here')
+         const calculatrice = `
+         <main>
          <table border="1"> 
             <tr> 
-               <td colspan="3"><input id="output"/></td> 
-               <td><button onclick="effacer()">c</button></td> 
-            </tr> 
+               <td colspan="3"><input id="output"/></td>
+               <td><button onclick="effacer()">C</button></td>
+            </tr>
             <tr> 
                <td><button onclick="afficher('1')">1</button></td> 
                <td><button onclick="afficher('2')">2</button></td> 
@@ -30,8 +31,9 @@
                <td><button onclick="afficher('/')">/</button></td> 
             </tr> 
          </table> 
-         </main>`;
-          body.insertAdjacentHTML("afterbegin", calculatrice);
+         </main>
+         `;
+         body.insertAdjacentHTML("afterbegin", calculatrice);
          //fonction qui évalue le chiffre et renvoie la sortie
          function computeResult(strs){
             return Function('return ' + strs)()
