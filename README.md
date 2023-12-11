@@ -1,1 +1,1 @@
-# [https://hazemmaddouri.github.io/calculator/](#1calculator)
+# [Click here for the project](https://hazemmaddouri.github.io/calculator/)
