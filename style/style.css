@@ -1,17 +1,26 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: "Quicksand", sans-serif;
 }
 
 body {
+  height: 100vh;
   background: -webkit-gradient(linear, left top, right bottom, from(red), to(blue));
   background: linear-gradient(to right bottom, red, blue);
   margin: 0;
   padding: 0;
-  height: 100vh;
 }
 
 .here {
-  margin-top: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,8 +28,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main {
